@@ -1,0 +1,17 @@
+{
+    "facts": [
+        "O usuário gosta de programação.",
+        "O usuário gosta de jogos.",
+        "O usuário gosta de anime.",
+        "O usuário gosta do jogo Persona 3.",
+        "O usuário gosta da franquia Fate.",
+        "O usuário gosta de rock."
+    ],
+    "preferences": [
+        "Gosta de boa companhia.",
+        "Gosta de humor irônico.",
+        "Gosta de brincadeiras.",
+        "Gosta de piadas.",
+        "Gosta de humor ácido."
+    ]
+}

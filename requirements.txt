@@ -1,0 +1,9 @@
+accelerate
+openai-whisper
+torch
+torchaudio
+torchcodec
+transformers
+sounddevice
+soundfile
+coqui-tts>=0.27.5
