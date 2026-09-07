@@ -84,15 +84,15 @@ def decay_mood(mood_intensity):
 def listen(username):
     print("\nOuvindo...")
 
-    sample_rate = 16000
-    block_duration = 0.1
-    silence_limit = 1.5
-    max_duration = 8.0
-    threshold = 0.01
+    sample_rate = 16000 # frequência
+    block_duration = 0.1 # Tempo dos blocos de fala
+    silence_limit = 1.5 # Tempo máximo de silêncio
+    max_duration = 8.0 # Duração máxima da gravação
+    threshold = 0.01 # Controla o que é considerado ruído
 
     blocks = []
-    silence_time = 0
-    recording_time = 0
+    silence_time = 0 # Tempo em silêncio
+    recording_time = 0 # Tempo de gravação
     started_speaking = False
 
     with sd.InputStream(

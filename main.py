@@ -109,17 +109,17 @@ while True:
     answ = answer(msg, facts, conversation, tokenizer, device, llm_model, mood_intensity)
 
     # fallback
-    if not answ or answ in ["", ".", "..."]:
+    if not answ or answ in [".", "..."]:
         answ = random.choice(fallback_msgs)
 
-    print(f"Ada: {answ}") # resposta da IA
+    print(f"Ada: {answ}") # resposta em texto da IA
     speak(answ, VOICE_REF, tts) # voz
 
     # Fila de mensagens
     conversation.append({"role": "user", "content": msg})
     conversation.append({"role": "assistant", "content": answ})
 
-    if len(conversation) > 10: # mais que 10 mensagens + respostas = sai 1 mensagem e 1 resposta
+    if len(conversation) > 10: # mais que 10 mensagens + respostas -> sai 1 mensagem e 1 resposta
         conversation.pop(0)
         conversation.pop(0)
 
